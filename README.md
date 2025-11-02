@@ -1,0 +1,63 @@
+// ...existing code...
+# Iyana Healing Path — Portfolio
+
+Lightweight single-page portfolio built with Vite, React and TypeScript. Includes Tailwind CSS and a small UI primitives library used to showcase education, clinical experience, projects and contact information.
+
+## Quick links
+- Repo root: d:\madam_ji\iyana-healing-path
+- App entry: `src/main.tsx`
+- Root component: `src/App.tsx`
+- Main page: `src/pages/Index.tsx`
+- UI primitives: `src/components/ui/`
+- Public assets: `public/` (includes `robots.txt`, `favicon.ico`)
+
+## Requirements
+- Node.js 18+ (recommended)
+- npm
+
+## Install & run (local)
+```sh
+npm install
+npm run dev
+# open the URL shown by Vite (usually http://localhost:5173)
+```
+
+## Build & preview
+```sh
+npm run build
+npm run preview
+```
+Production output is placed in `dist/` by Vite.
+
+## Project layout
+- public/ — static files (robots.txt, favicon, placeholders)
+- src/
+  - main.tsx — app entry
+  - App.tsx — routes & layout
+  - components/ — page sections (Hero, About, Skills, Projects, Gallery, Contact, Footer, Navigation)
+  - components/ui/ — UI primitives (buttons, dialog, toast, etc.)
+  - pages/ — Index, NotFound
+  - assets/ — images
+- vite.config.ts, tailwind.config.ts, postcss.config.js, package.json
+
+## robots.txt
+A permissive `public/robots.txt` is included and allows all major crawlers:
+```
+User-agent: *
+Allow: /
+```
+(See `public/robots.txt` for the full file.)
+
+## Deployment
+This is a static SPA. Build and deploy the `dist/` folder to any static host (Vercel, Netlify, GitHub Pages). Update base path in `vite.config.ts` if deploying to a subpath.
+
+## Contributing
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit and open a PR.
+
+## License
+Add a LICENSE file if required (suggested: MIT).
+
+## Contact
+For changes or issues, open an issue or PR in this repository.
